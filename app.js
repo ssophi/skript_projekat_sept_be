@@ -105,4 +105,4 @@ app.use(history({ index: '/index.html' }));
 
 app.use(staticMdl);
 
-server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+server.listen(process.env.PORT || PORT, () => console.log(`Server running on port ${PORT}`));
